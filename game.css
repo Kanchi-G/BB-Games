@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+ 
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#gaming{
+    background-image: url("1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 89vh;
+}
+header h1{
+    font-size: 3rem;
+
+}
+header h3{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.container1{
+   height: 400px;
+   display: flex;
+   padding: auto;
+   align-items: center;
+   justify-content: center;
+   max-width: 1133px;
+}
+    .center{
+        background: black;
+        color: white;
+    
+    }
+    .logo2 img{
+        padding-left:10px ;
+        width: 80px;
+        height: 80px;
+    }
+        .icons{
+            font-size: 20px;
+          color:white;
+          cursor: initial;
+         }
+    .loic{
+    display: flex;
+        justify-content: space-between;
+    }
+.img{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+    display: flex;
+    text-align: center;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ola{
+    background-image: url("pic.jpg");
+    backdrop-filter:25%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 75vh;
+    width:100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+@media (max-width:500px){
+    .img{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+    *{
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
+
+    #navbar{
+        display:block;
+        
+    }
+    #logo{
+        display: block;
+        height: 59px;
+        width: 30%;
+    }
+    #navbar ul li{
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px 10px 0 0;
+    }
+    #navbar a::after{
+        content: "\a";}
+        
+        .container1{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+height: 650px;
+padding: 0px 0px 0px 0px;
+align-items: center;
+text-align: center;
+}
+.container1{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1133px;
+    margin: auto;}
+     .center{
+         background: black;
+         color: white;
+     text-align: center;
+     }
+     .logo2 img{
+         padding-left:10px ;
+         width: 80px;
+         height: 80px;
+         align-items: center;
+         justify-content: center;
+     }
+         .icons{
+             font-size: 10px;
+        text-align: end;
+          }
+     .loic{
+     display: flex;
+         justify-content: space-between;
+         text-align: center;
+     }
+}
