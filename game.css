@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+ 
+#navbar ul li a{
+    color: rgb(255, 241, 241);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(255, 239, 239);
+    background-color: rgb(0, 0, 0);
+}
+.home{
+    padding: 0;}
+ .home .slide{
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    min-height: 89vh;
+    width: 100%;
+    background-position: center;
+
+ }
+.home .swiper-button-next
+.home .swiper-button-prev{
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+}
+.home .slide .content{
+    width: 85rem;
+}
+
+.plain h3{
+display: block;
+font-size: 1.5rem;
+color: rgb(8, 7, 7);
+padding-bottom: 1 rem;
+text-align: center;
+}
+.plain h1{
+    display: block;
+font-size: 2.9rem;
+color: rgb(93, 86, 86);
+padding-bottom: 1 rem;
+text-align: center;
+}
+span{
+    color: rgb(184, 63, 119) ;
+}
+.container1{
+    height: 400px;
+    display: flex;
+    padding: auto;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1480px;
+    background-color: rgb(192, 188, 188);
+ }
+@media (max-width:500px){
+    .plain{
+    display: flex;
+    flex-wrap: wrap;
+    }
+.container1{
+    height: 200px;
+    font-size: 17px;
+    max-width: 500px;
+}
+}
+
+    .center{
+        background: black;
+        color: white;
+    
+    }
+    .logo2 img{
+        padding-left:10px ;
+        width: 80px;
+        height: 80px;
+    }
+        .icons{
+            font-size: 20px;
+          color:white;
+          cursor: initial;
+         }
+    .loic{
+    display: flex;
+        justify-content: space-between;
+    }
+.img{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ola{
+    background-image: url("pic.jpg");
+    backdrop-filter:25%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 75vh;
+    width:100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+@media (max-width:500px){
+    .img{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+    *{
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
+
+    #navbar{
+        display:block;
+        
+    }
+    #logo{
+        display: block;
+        height: 59px;
+        width: 30%;
+    }
+    #navbar ul li{
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 0px;
+        padding: 10px 10px 0 0;
+    }
+    #navbar a::after{
+        content: "\a";}
+        
+        .container1{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+height: 650px;
+padding: 0px 0px 0px 0px;
+align-items: center;
+text-align: center;
+}
+.container1{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1133px;
+    margin: auto;}
+}
+    
+     .box-container{
+     display: flex;
+         justify-content: space-between;
+         text-align: center;
+     } 
+     .footer{
+    padding-top: 2rem;
+        background-color:black;
+        color: white;
+     }
+    
+     .footer .box-container{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+ gap: 3rem;
+     }
+     .footer .box-container .loc h3{
+        color: white;
+        font-size: 2.5 rem;
+        padding-bottom: 2 rem;
+     }  
+     .footer .box-container .loc a{
+        color: wheat;
+        font-size: 1.5 rem;
+        padding-bottom: 1 rem;
+        display: block;
+     }  
+     .footer .box-container .loc a i{
+       color: wheat;
+       padding-right: .5 rem;
+       transition: 2s linear;
+     }  
+     .footer .box-container .loc a:hover i{
+        padding-right: 2 rem;
+      }  
+      .sq{
+       text-align: center;
+       padding-top: 2rem;
+       margin-top: 2rem;
+       border-top: .1rem solid var(--light-white);
+       font-size: 1.5rem;
+       color: var(--white);
+      }
+      @media (max-width:500px){
+        .footer{
+            padding-top: 1rem;
+             }
+             .footer .box-container{
+         display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+         gap: 0.5rem;
+             }
+             .footer .box-container .loc h3{
+                font-size: 1.5 rem;
+                padding-bottom: 1 rem;
+             }  
+             .footer .box-container .loc a{
+                font-size: 1 rem;
+                display: block;
+             }  
+             .footer .box-container .loc a i{
+               transition: 2s linear;
+             }  
+             .footer .box-container .loc a:hover i{
+                padding-right: 1 rem;
+              }  
+              .sq{
+               text-align: center;
+               padding-top: 1rem;
+               margin-top: 1rem;
+               border-top: .1rem solid var(--light-white);
+               font-size: 1rem;
+               color: var(--white);
+              }
+      }

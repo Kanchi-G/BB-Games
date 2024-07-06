@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardBased Games</title>
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<style>
+@import
+"https://fonts.googleapis.com/css?family=Cabin:400";
+#con{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#con h1{
+  font-size: 60px;
+  padding: 20px;
+  margin-top: 50px;
+
+}
+*{
+  box-sizing: border-box;
+}
+#fade{
+  animation: input-entry 3s ease-in; 
+  z-index: 4;
+} 
+
+.stark{
+  form { 
+    animation: form-entry 3s ease-in-out; 
+    background:darkgoldenrod;
+    background: linear-gradient(#004746, #111);
+    border: 6px solid cornflowerblue;
+    box-shadow: 0 0 15px #00fffd;
+    border-radius: 5px;
+    display: inline-block;
+    height: 350px;
+    margin: 30px auto 0;
+    position: relative;
+    z-index: 4;
+    width: 500px;
+    transition: 1s all ;
+    
+    &:hover {
+        border: 6px solid #00fffd;
+        box-shadow: 0 0 25px #00fffd;
+        transition: 1s all ;
+      }
+  } 
+  
+  
+  
+  input {
+    background: #222;
+    background: linear-gradient(#333, #222);	
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #888;
+    display: block; 
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-size: 1.3rem;
+    height: 40px;
+    margin: 20px auto 10px; 
+    padding: 0 10px;
+    text-shadow: 0 -1px 0 #000;
+    width: 400px;
+    
+  }
+  
+  
+  input:focus {
+      animation: box-glow 1s ease-out infinite alternate;
+      background: #0B4252;
+      background: linear-gradient(#333933, #222922);
+      border-color: #00fffc;
+      box-shadow: 0 0 5px rgba(0, 255, 253, .2), inset 0 0 5px rgba(0, 255, 253, .1), 0 2px 0 #000;
+      color: #efe;
+      outline: none;
+    }
+    
+    input:invalid {
+      border: 2px solid red;
+      box-shadow: 0 0 5px rgba(255, 0, 0, .2), inset 0 0 5px rgba(255, 0, 0, .1), 0 2px 0 #000;
+    }
+    
+    
+    
+    button { 
+      animation: input-entry 3s ease-in; 
+      background: #222;
+      background: linear-gradient(#333, #222);
+      box-sizing: content-box;
+      border: 1px solid #444;
+      border-left-color: #000; 
+      border-radius: 5px;
+      box-shadow: 0 2px 0 #000;
+      color: #fff;
+      display: block;
+      font-family: 'Cabin', helvetica, arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      height: 40px;
+      line-height: 40px;
+      margin: 20px auto; 
+      padding: 0; 
+      position: relative;
+      text-shadow: 0 -1px 0 #000;
+      width: 400px;
+      transition: 1s all ;
+    }	
+    
+    button:hover,
+    button:focus {
+      background: #0C6125;
+      background: linear-gradient(#393939, #292929);
+      color:cornflowerblue;
+      outline: none;
+      transition: 1s all ;
+    }
+    
+    button:active {
+      background: #292929;
+      background: linear-gradient(#393939, #292929);
+      box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+      top: 1px; 
+    }
+    
+}
+@keyframes input-entry {
+  0% {
+    opacity: 0;
+  }	
+  90% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes form-entry {
+  0% {
+    height:0;
+    width: 0;
+    opacity: 0;   
+    padding: 0;
+  }	
+  20% {
+    height: 0;
+    border: 1px solid cornflowerblue;
+    width: 0;
+    opacity: 0;  
+    padding: 0; 
+  }	
+  
+  
+  40% {
+    width: 0;
+    height: 220px;
+    border: 6px solid cornflowerblue; 
+    opacity: 1 ; 
+    padding: 0;
+  }
+  
+  100% {
+    height: 220px; 
+    width: 500px;
+    
+  }
+}
+
+
+
+@keyframes box-glow {
+  0% {
+    border-color: #00b8b6;
+    box-shadow: 0 0 5px rgba(0, 255, 253, .2), inset 0 0 5px rgba(0, 255, 253, .1), 0 2px 0 #000;
+  }	
+  100% {
+    border-color: cornflowerblue;
+    box-shadow: 0 0 20px rgba(0, 255, 253, .6), inset 0 0 10px rgba(0, 255, 253, .4), 0 2px 0 #000;
+  }
+}
+
+@keyframes text-glow {
+  0% {
+    color: cornflowerblue;
+    text-shadow:0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+  }	
+  100% {
+    color: cornflowerblue;
+    text-shadow: 0 0 20px rgba(0, 255, 253, .6), 0 0 10px rgba(0, 255, 253, .4), 0 2px 0 #000;
+  }
+}
+
+@keyframes before-glow {
+  0% {
+    border-bottom: 10px solid cornflowerblue;
+  }	
+  100% {
+    border-bottom: 10px solid cornflowerblue;
+  }
+}
+
+@keyframes after-glow {
+  0% {
+    border-top: 16px solid stark-med-blue;
+  }	
+  100% {
+    border-top: 16px solid stark-light-blue;
+  }
+}
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" >
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about.html">About Us</a></li>
+            <li class="item"><a href="carrer.html">Carrer</a></li>
+            <li class="item"><a href="internship.html">Internship</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+      <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+          <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.18 PM.jpeg"height="89px">
+    <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM (1).jpeg" height="89px">
+     <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM (2).jpeg" height="89px">
+     <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM.jpeg" height="89px">
+     </div>
+  </div>
+  </div></section>
+    <div id="home">
+      <div id="gaming">
+     <header>
+      <h1>Welcome to BoardBased Games</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+  </header> 
+    </div>
+<div id="con">
+<h1><i>Get in Touch</i></h1>
+  <section class="stark">
+    <form>
+      <div id="fade">
+       
+        <input type="text" name="username" id="username" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+         <input type="text" placeholder="Subject">
+          <input type="text" placeholder="Message">
+         <button>Submit</button>
+      </div>
+    </form>
+  </section> </div>
+<div class="stock">
+  <h1>Contact Us</h1>
+  <li>Location</li>
+  <li>Call +000</li>
+  <li>demo@gmail.com</li>
+</div>
+<section class="footer">
+  <div class="box-container">
+<div class="loc">
+  <h3>quick links</h3>
+<a href="#"><i class="fas fa-angle-right"></i>home</a>
+<a href="#"><i class="fas fa-angle-right"></i>about</a>
+<a href="#"><i class="fas fa-angle-right"></i>internship</a>
+<a href="#"><i class="fas fa-angle-right"></i>contact</a></div>
+<div class="loc">
+  <h3>extra links</h3>
+<a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+<a href="#"><i class="fas fa-angle-right"></i>about</a>
+<a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+<a href="#"><i class="fas fa-angle-right"></i>terms of use</a></div>
+<div class="loc">
+  <h3>contact info</h3>
+<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+<a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+<a href="#"><i class="fas fa-envelope"></i>keshavsapre168@gmail.com</a>
+<a href="#"><i class="fas fa-map"></i>pune,india-400104</a></div>
+<div class="loc">
+  <h3>follow us</h3>
+  <a href=""><i class="fa-brands fa-square-instagram"></i>instagram</a> 
+  <a href=""><i class="fa-brands fa-square-facebook"></i>facebook</a> 
+   <a href=""><i class="fa-brands fa-linkedin"></i>linkedin</a> </div>
+  </div>
+  <div class="sq">Copyright &copy; BoardBased@gmail.com All rights reserved!  
+</div>
+</section>
+<script src="game.js"></script>
+</body>
+</html>

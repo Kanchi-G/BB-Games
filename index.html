@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardBased Games</title>
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"> -->
+</head>
+<style>
+html {
+    box-sizing: border-box;
+    cursor: default;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+:after, :before {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+*, :after, :before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+:after, :before {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+*, :after, :before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+::selection {
+    background-color: #b3d4fc;
+    color: #000;
+    text-shadow: none;
+}
+.modulePromo{
+    text-align: center;
+    background-color:rgb(205, 202, 202);
+    color: black;
+}
+.modulePromo h2{
+font-size: 30px;
+padding: 7px 7px;
+}
+.section2 h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.box{
+    padding: 5px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    color: darkorchid;
+    text-align: center;
+}
+.box img{
+    height: 150px;
+}
+.box h3{
+    color: black;
+    font-size: 70px;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 13px 0;
+}
+
+.highlighted{
+    font-size: 2.0rem;
+    font-weight: bolder;
+
+}
+.container1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 120px;
+}
+.push{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.heading1{
+    background-color: palevioletred;
+    color: aliceblue;
+    height: 400px;
+    width: 400px;
+
+}
+.heading2{
+    background-color: palevioletred;
+    color: aliceblue;
+    height: 400px;
+    width: 400px;
+}
+.heading3{
+    background-color: palevioletred;
+    color: aliceblue;
+    height: 400px;
+    width: 400px;
+}
+.blog{
+    text-align: center;
+    padding-top: 56px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+.h1{
+ font-size: 49px;
+}
+.port{
+    font-size: 20px;
+}
+.blog0{
+    display: flex;
+    justify-content: space-around;
+     text-align: center;
+     padding-bottom: 56px;
+}
+@media (max-width:500px) {
+ *{
+    width: 100%;
+ }
+    .blog{
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 15px;
+}
+.h1{
+ font-size: 30px;
+}
+.port{
+    font-size: 15px;
+}
+    .blog0{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+}@media (max-width:500px) {
+    .push{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding-left: 0px;
+        margin: 0px 0px 0px 0px;
+        height: 530px;
+    }
+    .text-center{
+    width: 100%;
+    font-size: 10px;
+    color: darkorchid;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+.section2{
+    padding: 0px 0px 0px 0px;
+}
+
+.section2 h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section2 p{
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+.plain{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+}
+
+</style>
+<body>
+    
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" >
+            </div>
+            <div id="container">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about.html">About Us</a></li>
+            <li class="item"><a href="carrer.html">Carrer</a></li>
+            <li class="item"><a href="internship.html">Internship</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="plain">
+        <div class="hamburger">
+            <img  class="ham" src="open.jpg">
+            <img src="cc.png" alt="" class="cross">
+        </div>
+    </div> -->
+  <section class="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+        <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.18 PM.jpeg"height="89px">
+  <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM (1).jpeg" height="89px">
+   <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM (2).jpeg" height="89px">
+   <img class="slide" src="WhatsApp Image 2024-06-26 at 10.29.19 PM.jpeg" height="89px">
+   </div>
+</div>
+</div></section>
+  <div class="plain">
+    <h1>Welcome to <span>BoardBased Games</span></h1>
+     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+  <div class="container1">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione itaque corrupti dolorem reprehenderit tenetur nostrum nobis porro iusto officia repudiandae, assumenda facere, consequuntur quibusdam laudantium eveniet odio minima possimus illum reiciendis 
+ </p>
+ <div class="img7">
+  <img src="Screenshot 2024-06-21 214745.png" height="350 px" width="550px">
+</div></div>
+</div>
+<div class="img">
+  <div class="img1"> <img src="2.jpg" width="400px">
+    <p>Lorem ipsum dolor sit amet.</p></div> 
+    <div class="img1">    <img src="pexels-mykhailo-volkov-12325210.jpg" width="400px" height="400px">
+    <p>Lorem ipsum dolor sit amet.</p></div> 
+    <div class="img1"> <img src="3.jpg" width="400px">
+  <p>Lorem ipsum dolor sit amet.</p></div> 
+</div>
+<div class="blog">
+    <div class="h1">
+WHY BOARDBASED GAMES</div>
+<div class="port">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, vel! Fugit nemo excepturi magni doloremque quia saepe accusamus, perspiciatis molestiae culpa est! Accusantium earum hic excepturi rerum illum placeat animi, soluta incidunt qui officia obcaecati nulla.</p>
+</div>
+</div>
+<section class="blog0">
+<div class="blog1">
+    <img src="Brainstorm.jpg" width="175px" height="175px">
+    <h1>Brainstorm</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti reiciendis esse vitae tenetur cum ut!</p>
+</div>
+  <div class="blog2">
+    <img src="Friendly working envi.png" width="175px" height="175px"alt="">
+    <h1>Friendly Environment</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quasi veritatis odit architecto obcaecati corrupti?</p>
+  </div>
+  <div class="blog3">
+    <img src="Small Team.jpg"width="175px" height="175px" alt="">
+    <h1>Small Team</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ipsa totam vitae, et adipisci illum?</p>
+  </div>
+  <div class="blog4">
+    <img src="Long weekend.png" width="175px" height="175px"alt="">
+    <h1>Long Weekend</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores quos iste quo itaque assumenda!</p>
+  </div>
+</section>
+<section class="section2">
+    <h1 class="text-center my-2">Join our team and make a difference today!</h1>
+    <div class="boxes flex justify-center">
+        <div class="box">
+            <ul>
+                <li class="highlighted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>
+                <h1>24 Million+
+                  <p>  App Downloads </p>
+                        <h3>up to</h3>
+                <h1>100+ Countries</h1>
+            </ul>
+        </div>
+    </div>
+    <div class="ola">
+        <h1>Have An Idea?</h1>
+        <p>"Together we will develop your future"</p>
+        <p>Interested in our specialization for your Dream Project?
+            Get a quote or ask for more information, It’s Free!</p>
+        <a href="internship.html"><button>Get in touch</button></a>
+    </div>
+    <section><div class="int">
+        <div class="push">
+            <div class="heading1">
+                <h1>Desert</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate, suscipit reiciendis similique incidunt magnam quidem vitae omnis animi ipsum nostrum distinctio?</p>
+            </div>
+            <div class="heading2">
+                <h1>Groves</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate, suscipit reiciendis similique incidunt magnam quidem vitae omnis animi ipsum nostrum distinctio?</p>
+            </div>
+            <div class="heading3">
+                <h1>Peaks</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate, suscipit reiciendis similique incidunt magnam quidem vitae omnis animi ipsum nostrum distinctio?</p>
+            </div>
+        </div>
+    </div></section>
+    
+    <div class="modulePromo module" ><h2 class="promo__content__title" data-innertext="BoardBased Connect" data-ccf-l="title">BoardBased Connect</h2><p>All your games, friends, and benefits in one place.</p><a data-innertext="Explore Carrer" data-ccm-m="buttonMaster" href="carrer.html" target="blank" ><span class="" data-innertext="Get Ubisoft Connect" data-ccid-l="7wc7W0g8k6YRfLlWjB2OOU" data-ccm-l="button" data-ccf-l="buttonText">Get BoardBased Connect</span></a></div></div></div></div></div>
+    <section class="footer">
+        <div class="box-container">
+      <div class="loc">
+        <h3>quick links</h3>
+     <a href="#"><i class="fas fa-angle-right"></i>home</a>
+     <a href="#"><i class="fas fa-angle-right"></i>about</a>
+     <a href="#"><i class="fas fa-angle-right"></i>internship</a>
+     <a href="#"><i class="fas fa-angle-right"></i>contact</a></div>
+     <div class="loc">
+        <h3>extra links</h3>
+     <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+     <a href="#"><i class="fas fa-angle-right"></i>about</a>
+     <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+     <a href="#"><i class="fas fa-angle-right"></i>terms of use</a></div>
+     <div class="loc">
+        <h3>contact info</h3>
+     <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+     <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+     <a href="#"><i class="fas fa-envelope"></i>keshavsapre168@gmail.com</a>
+     <a href="#"><i class="fas fa-map"></i>pune,india-400104</a></div>
+     <div class="loc">
+        <h3>follow us</h3>
+        <a href=""><i class="fa-brands fa-square-instagram"></i>instagram</a> 
+        <a href=""><i class="fa-brands fa-square-facebook"></i>facebook</a> 
+         <a href=""><i class="fa-brands fa-linkedin"></i>linkedin</a> </div>
+        </div>
+        <div class="sq">Copyright &copy; BoardBased@gmail.com All rights reserved!  
+    </div>
+</section>
+<script src="game.js">
+</script>
+</body>
+</html>
